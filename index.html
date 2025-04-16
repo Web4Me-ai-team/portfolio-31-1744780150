@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daniel Deng's Personal Website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Fredoka+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <aside class="sidebar" data-sidebar>
+      <div class="sidebar-info">
+        <figure class="avatar-box">
+          <img src="profile/18.svg" alt="User" style="width: 250px; height: auto; max-width: 100%; border-radius: 50%;">
+        </figure>
+        <div class="info-content">
+          <h1 class="name" title="Daniel Deng">Daniel Deng</h1>
+          <p class="title">Software Engineer</p>
+        </div>
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+        </button>
+      </div>
+      <div class="sidebar-info_more" data-sidebar-more>
+        <div class="separator"></div>
+        <ul class="contacts-list">
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <a href="mailto:danielzdeng01@gmail.com" class="contact-link">danielzdeng01@gmail.com</a>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+              <a href="tel:+12038876167" class="contact-link">(203) 887-6167</a>
+            </div>
+          </li>
+        </ul>
+        <div class="separator"></div>
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="https://linkedin.com/in/zhanqideng" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <div class="main-content">
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <button class="navbar-link active" data-nav-link>About</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Education</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Research</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Projects</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Skills</button>
+          </li>
+        </ul>
+      </nav>
+
+      <article class="about active" data-page="about">
+        <header>
+          <h2 class="h2 article-title">About Me</h2>
+        </header>
+        <section class="about-text">
+          <h2>👋 Hi, I'm Daniel Deng</h2>
+          <p>Daniel Deng is a highly skilled software engineer with a strong background in AI-driven applications and secure online systems. He has experience in developing scalable and efficient software solutions, with a focus on type-safe communication and real-time data processing. His technical expertise spans multiple programming languages and frameworks, making him adept at both front-end and back-end development.</p>
+        </section>
+      </article>
+
+      <article class="education" data-page="education">
+        <header>
+          <h2 class="h2 article-title">
+            <ion-icon name="book-outline"></ion-icon> Education
+          </h2>
+        </header>
+        <section class="timeline" id="education-container">
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Yale University</h4>
+              <span class="graduation-date">May 2024</span>
+              <p class="degree">Master of Science</p>
+              <p class="field">Computer Science</p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Wuhan University</h4>
+              <span class="graduation-date">Jun. 2022</span>
+              <p class="degree">Bachelor of Engineering</p>
+              <p class="field">Computer Science</p>
+            </li>
+          </ol>
+        </section>
+      </article>
+
+      <article class="research" data-page="research">
+        <header>
+          <h2 class="h2 article-title">
+            <ion-icon name="flask-outline"></ion-icon> Work Experience
+          </h2>
+        </header>
+        <section class="timeline" id="experience-container">
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Software Engineer (Part-time)</h4>
+              <span class="duration">Aug. 2024 – Oct. 2024</span>
+              <p class="institution">Pleasure House, Inc.</p>
+              <div class="description-container">
+                <ul class="description-list">
+                  <li>Developed an AI-driven character chat website using Next.js and TypeScript, enabling users to create and chat with customized virtual chatbots.</li>
+                  <li>Implemented tRPC routers and procedures to establish a type-safe communication layer between the frontend and backend, enabling seamless and responsive conversation with chatbots.</li>
+                  <li>Designed data schemas for users, chatbots, and messages in MongoDB to ensure efficient data organization and retrieval; Used Prisma to execute and manage type-safe database operations.</li>
+                </ul>
+              </div>
+              <div class="techniques-container">
+                <span class="technique-tag">Next.js</span>
+                <span class="technique-tag">TypeScript</span>
+                <span class="technique-tag">tRPC</span>
+                <span class="technique-tag">MongoDB</span>
+                <span class="technique-tag">Prisma</span>
+              </div>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Software Engineer Intern</h4>
+              <span class="duration">Aug. 2021 – Dec. 2021</span>
+              <p class="institution">Microsoft</p>
+              <div class="description-container">
+                <ul class="description-list">
+                  <li>Developed features for the meeting report module of Microsoft Teams with React and TypeScript, such as recording participants’ actions in meetings and generating downloadable attendance reports.</li>
+                  <li>Implemented efficient data interactions with the back-end server using GraphQL Queries and Mutations; used Subscriptions to track and record real-time participants’ actions in meetings.</li>
+                  <li>Used React Hooks like useContext and useCallback to optimize data flow and rendering process within the meeting analytics component.</li>
+                  <li>Implemented unit tests using ts-jest and React Testing Library to validate the functionality of front-end components.</li>
+                </ul>
+              </div>
+              <div class="techniques-container">
+                <span class="technique-tag">React</span>
+                <span class="technique-tag">TypeScript</span>
+                <span class="technique-tag">GraphQL</span>
+                <span class="technique-tag">ts-jest</span>
+                <span class="technique-tag">React Testing Library</span>
+              </div>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Research Assistant</h4>
+              <span class="duration">Jan. 2022 – May. 2022</span>
+              <p class="institution">National Engineering Research Center for Multimedia Software</p>
+              <div class="description-container">
+                <ul class="description-list">
+                  <li>Implemented a helmet wearing detection model based on the Yolov5 model with PyTorch and an HSI color space-based algorithm for color recognition, achieving a high accuracy rate of 95%.</li>
+                  <li>Integrated DIoU NMS into the detection pipeline, increasing the detection accuracy for overlapping objects by 2.3%.</li>
+                </ul>
+              </div>
+              <div class="techniques-container">
+                <span class="technique-tag">Yolov5</span>
+                <span class="technique-tag">PyTorch</span>
+                <span class="technique-tag">HSI color space</span>
+                <span class="technique-tag">DIoU NMS</span>
+              </div>
+            </li>
+          </ol>
+        </section>
+      </article>
+
+      <article class="projects" data-page="projects">
+        <header>
+          <h2 class="h2 article-title">
+            <ion-icon name="construct-outline"></ion-icon> Projects
+          </h2>
+        </header>
+        <section class="timeline" id="projects-container">
+          <ol class="timeline-list">
+            <li class="timeline-item project-item">
+              <h4 class="h4 project-title">Fair Poker Game</h4>
+              <p class="project-duration">Jan. 2024 – Mar. 2024</p>
+              <p class="project-description">Developed a secure and trustworthy online poker game using Python and React, integrating advanced cryptographic techniques to guarantee the authenticity and impartiality of all game-related transactions.</p>
+              <div class="project-tech">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Threshold LWE encryption</span>
+                <span class="tech-tag">Flask-SocketIO</span>
+              </div>
+              <div class="project-outcomes">
+                <h4>Outcomes:</h4>
+                <ul>
+                  <li>Employed Threshold LWE encryption in the secure dealing of cards.</li>
+                  <li>Implemented a card shuffling process based on Secure Multi-party Computation.</li>
+                  <li>Used Flask-SocketIO to manage real-time persistent communication between server and clients.</li>
+                </ul>
+              </div>
+            </li>
+            <li class="timeline-item project-item">
+              <h4 class="h4 project-title">High Concurrency Ticketing Website</h4>
+              <p class="project-duration">Sep. 2023 – Dec. 2023</p>
+              <p class="project-description">Developed a resilient ticket booking platform with Spring Boot, MySQL, and Vue.js, enabling users to efficiently browse and search for events, book tickets, provide ratings, and post reviews on events.</p>
+              <div class="project-tech">
+                <span class="tech-tag">Spring Boot</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">Vue.js</span>
+                <span class="tech-tag">Redis</span>
+              </div>
+              <div class="project-outcomes">
+                <h4>Outcomes:</h4>
+                <ul>
+                  <li>Architected a scalable back-end server with a Redis message queue.</li>
+                  <li>Designed and created data schema with ER diagrams.</li>
+                  <li>Optimized MySQL queries with rollback functionality.</li>
+                </ul>
+              </div>
+            </li>
+          </ol>
+        </section>
+      </article>
+
+      <article class="skills" data-page="skills">
+        <header>
+          <h2 class="h2 article-title">
+            <ion-icon name="build-outline"></ion-icon> Technical Skills
+          </h2>
+        </header>
+        <section class="skills-container" id="technical-skills-container">
+          <div class="skills-group">
+            <h3 class="skills-category">Programming Languages & Frameworks</h3>
+            <ul class="skills-list">
+              <li class="skill-item">Python</li>
+              <li class="skill-item">C/C++</li>
+              <li class="skill-item">Java</li>
+              <li class="skill-item">TypeScript</li>
+              <li class="skill-item">JavaScript</li>
+              <li class="skill-item">Swift</li>
+              <li class="skill-item">C#</li>
+              <li class="skill-item">HTML/CSS</li>
+              <li class="skill-item">SQL</li>
+              <li class="skill-item">React.js</li>
+              <li class="skill-item">Next.js</li>
+              <li class="skill-item">Node.js</li>
+              <li class="skill-item">Spring Boot</li>
+              <li class="skill-item">Flask</li>
+              <li class="skill-item">.Net</li>
+              <li class="skill-item">GraphQL</li>
+              <li class="skill-item">tRPC</li>
+              <li class="skill-item">Tailwind CSS</li>
+              <li class="skill-item">Prisma</li>
+              <li class="skill-item">MongoDB</li>
+              <li class="skill-item">MySQL</li>
+              <li class="skill-item">SQLite</li>
+              <li class="skill-item">Vercel</li>
+              <li class="skill-item">Redis</li>
+              <li class="skill-item">Jest</li>
+              <li class="skill-item">Github Actions</li>
+              <li class="skill-item">PyTorch</li>
+              <li class="skill-item">Keras</li>
+              <li class="skill-item">Pandas</li>
+              <li class="skill-item">OpenCV</li>
+              <li class="skill-item">Git</li>
+            </ul>
+          </div>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <script>
+    'use strict';
+
+    // Toggle sidebar contacts
+    const sidebar = document.querySelector("[data-sidebar]");
+    const sidebarBtn = document.querySelector("[data-sidebar-btn]");
+    const sidebarMore = document.querySelector("[data-sidebar-more]");
+
+    sidebarBtn.addEventListener("click", function () {
+      sidebarMore.classList.toggle("active");
+      sidebarBtn.querySelector("span").textContent = sidebarMore.classList.contains("active") ? "Hide Contacts" : "Show Contacts";
+    });
+
+    // Handle navigation links
+    const navigationLinks = document.querySelectorAll("[data-nav-link]");
+    const pages = document.querySelectorAll("[data-page]");
+
+    navigationLinks.forEach((link) => {
+      link.addEventListener("click", function () {
+        navigationLinks.forEach(navLink => navLink.classList.remove("active"));
+        this.classList.add("active");
+
+        const pageName = this.textContent.toLowerCase().trim();
+        pages.forEach(page => page.classList.remove("active"));
+        const targetPage = document.querySelector(`[data-page="${pageName}"]`);
+        if (targetPage) {
+          targetPage.classList.add("active");
+          window.scrollTo(0, 0);
+        }
+      });
+    });
+  </script>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
